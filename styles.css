@@ -57,3 +57,16 @@ body{font-family:'DM Sans',Arial,sans-serif}
 .footer{padding-top:25px;padding-bottom:25px}
 @media(max-width:800px){.wrap{width:min(100% - 36px,1140px)}.site-header{height:68px}.hero{padding-top:52px}.hero h1{font-size:clamp(47px,10vw,72px)}.hero-footer{margin-top:45px}.section{padding-top:57px;padding-bottom:59px}.section-right{padding-top:0}.step,.step+.step{padding:21px}.document{padding:26px}.contact-grid{gap:35px}}
 @media(max-width:420px){.hero h1{font-size:45px}.hero-actions{gap:18px}.hero-footer{margin-top:36px}.section h2{font-size:38px}}
+
+/* Executive hero composition */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(280px,.85fr);gap:55px;align-items:stretch}
+.hero-main{padding-bottom:6px}
+.hero h1{font-size:clamp(50px,5.5vw,76px);line-height:1.13}
+.hero-aside{background:#e8e9e4;border:1px solid #d6dad7;padding:31px 29px 25px;display:flex;flex-direction:column;justify-content:space-between;min-height:345px}
+.aside-kicker{font-size:10px;font-weight:800;letter-spacing:1.5px;color:#53656d}
+.aside-rule{height:2px;width:36px;background:#b58d5d;margin:16px 0}
+.hero-aside strong{font:700 clamp(23px,2.3vw,32px)/1.27 'Plus Jakarta Sans',sans-serif;letter-spacing:-1.2px;color:#1b3040}
+.hero-aside p{font-size:13px;line-height:1.7;color:#526171;margin:20px 0 25px}
+.aside-bottom{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;border-top:1px solid #cdd3d0;padding-top:15px;font-size:9px;font-weight:800;letter-spacing:.5px;color:#596971}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:24px}.hero-aside{min-height:0;padding:25px}.hero-aside strong{font-size:27px}.hero-aside p{margin:14px 0}.hero h1{font-size:clamp(45px,8.5vw,75px)}}
+@media(max-width:420px){.hero h1{font-size:43px}.hero-aside strong{font-size:24px}.hero-aside{padding:21px}}
